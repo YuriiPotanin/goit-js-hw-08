@@ -23,8 +23,8 @@ const createMarkup = galleryItems.map(
     )
     .join(" ");
 
-imgGallery.innerHTML = createMarkup;
-
+// imgGallery.innerHTML = createMarkup;
+imgGallery.insertAdjacentHTML("beforeend", createMarkup);
 
 const gallery = new SimpleLightbox('.gallery a',{
     captions: true,
